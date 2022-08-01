@@ -16,6 +16,7 @@ clean:
 	rm -rf "$(BUILDDIR)"
 
 build:
+	$(MAKE) -C fpga
 	source "$(IDF_PATH)/export.sh" && idf.py build
 
 install: build

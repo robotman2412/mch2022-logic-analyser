@@ -1,6 +1,7 @@
 build
-main/build
+fpga/build-tmp
 sdkconfig.old
 *.bak
 *.old
 .vscode
+*.code-workspace

@@ -8,4 +8,6 @@ idf_component_register(
         "main.c"
     INCLUDE_DIRS
         "." "include"
+    EMBED_FILES
+        ${project_dir}/fpga/build-tmp/logix.bin
 )
