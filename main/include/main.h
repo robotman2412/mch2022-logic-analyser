@@ -12,7 +12,7 @@ typedef enum {
     MODE_FAST,
     MODE_RAMST,
     MODE_RAMLD,
-} mode_t;
+} fpgamode;
 
 // For pin mappings.
 #include "hardware.h"
@@ -46,7 +46,7 @@ void disp_flush();
 void exit_to_launcher();
 
 // Sets the FPGA's mode.
-void set_mode(mode_t to);
+void set_mode(fpgamode to);
 // Does one fast capture, waiting until data changes.
 void capture_fast(size_t out_len, char *out_data);
 // Captures a sample of the data.

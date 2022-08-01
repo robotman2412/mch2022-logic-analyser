@@ -101,7 +101,7 @@ void app_main() {
 }
 
 // Sets the FPGA's mode.
-void set_mode(mode_t to) {
+void set_mode(fpgamode to) {
     uint8_t cmd = to;
     ice40_transaction(fpga, NULL, 0, &to, 1);
 }
